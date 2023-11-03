@@ -3,48 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
     <title>Tina's Blog</title>
     <audio controls autoplay>
-        <source src="images/Little Planets - Remix.mp3">
+        <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
     </audio>
-</head>
-<body>
+<!-- </head> I wanted to end my head here however the validator saw it as an error-->
+<!-- </body> I wanted to start the body here however the validator saw it as an error-->
     <header>
         <figure>
-            <img src="../Images/tina.svg" height="100">
+            <img src="../Images/tina.svg" height="100" alt="Tina's logo in yellow">
         </figure>
         <nav>
             <ul>
                 <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects"> Hobbies & Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <article>
-            <section id="#about">
+        <h1>Welcome to my page!</h1>
+            <section id="about">
                 <h2>About me</h2>
-                <p> Hi pals!</p>
-                <figure>
-                    <img src="./images/IMG_0029.JPG" height="300" alt="Briana, Tina, Chris and Ronald" > 
-                    <figcaption> My school besties!! (from left to right: Briana, Me, Chris & Ronald)
-                </figure>
+                    <p>Hi pals! My name is Tina I am Technical Specialist at Apple and I am currently studying UX Design at SAIT. I graduated with a Bachelor's of Science in Biomechanics during the pandemic however I was unable to find a position that I was passionate about. I landed a position at Apple during my soul search and  fell in love with the world of technology. Fast forward to the present I am doing a 180˚ career change at 25.</p>
+                        <figure>
+                            <img src="./images/IMG_0029.JPG" height="300" alt="Briana, Tina, Chris and Ronald">
+                            <figcaption>My school besties!! (from left to right: Briana, Me, Chris & Ronald)</figcaption>
+                        </figure>
+                        <aside>
+                            <p> Fun Fact: this is our 2nd round of post secondary.</p>
+                        </aside>
             </section>
-            <section id="#projects">
-                <h2>Projects</h2>
-                <figure>
-                    <img src="./images/Strawberry frogs-01.svg" height="300" alt="Tina's Illustrator design:frogs dressed as strawberries with a blue background"><img src="./images/SB Strawberry Frog.png" height="300" alt="Tina's Snowbaord design: frogs dressed as strawberries">
-                    <figcaption> Design 1: Frogs dressed as strawberries, inflated. </figcaption>
-                    <img src="./images/Watermelon.svg" height="300" alt="Tina's Illustrator design: inflated watermelons"><img src="./images/SB Watermelon.png" height="300" alt="Tina's snowboard design: inflated watermelons">
-                    <figcaption> Design 2: Watermelon on a blue background, inflated.  </figcaption>
-                    <img src="./images/Blue+White Flowers.svg" height="300" alt="Tina's Illustrator design: inflated white flowers"><img src="./images/SB White Flower.png" height="300" alt="Tina's snowboard design: inflated white flowers">
-                    <figcaption> Design 3: White flowers on a blue background, inflated. </figcaption>
-                </figure>
+            <section id="projects">
+                 <h2>Hobbies & Projects</h2>
+                    <p> My hobbies include: </p>
+                        <ul>
+                            <li>Bouldering</li>
+                            <li>Snowboarding</li>
+                            <li>Attending music festivals</li>
+                        </ul>
+                    <p>Below are the designs I created for my portfolio. A collection of snowboards that pay tribute to summer vibes.</p>
+                    <figure>
+                        <img src="./images/Strawberry_frogs-01.svg" height="300" alt="Tina's Illustrator design: frogs dressed as strawberries with a blue background">
+                        <img src="./images/SB_Strawberry_Frog.png" height="300" alt="Tina's Snowboard design: frogs dressed as strawberries">
+                        <figcaption>Design 1: Frogs dressed as strawberries, inflated. </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/Watermelon.svg" height="300" alt="Tina's Illustrator design: inflated watermelons">
+                        <img src="./images/SB_Watermelon.png" height="300" alt="Tina's snowboard design: inflated watermelons">
+                        <figcaption>Design 2: Watermelon on a blue background, inflated.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/White_Flowers.svg" height="300" alt="Tina's Illustrator design: inflated white flowers">
+                        <img src="./images/SB_WhiteFlower.png" height="300" alt="Tina's snowboard design: inflated white flowers">
+                        <figcaption>Design 3: White flowers on a blue background, inflated.</figcaption>
+                    </figure>
             </section>
             <section id="contact">
-                <h2>Contact</h2>
-                <p><a href="https://www.linkedin.com/in/tina-le-6173ba1a5/">LinkedIn</a></p>
+                    <h2>Contact</h2>
+                    <table style="width: 300px">
+                        <tr>
+                            <th>Linkedin</th>
+                            <th>Instagram</th>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.linkedin.com/in/tina-le-6173ba1a5/">Click here</a></td>
+                            <td><a href="https://www.instagram.com/tiina.le/">tiina.le</a></td>
+                        </tr>
+                    </table>
             </section>
         </article>
     </main>
