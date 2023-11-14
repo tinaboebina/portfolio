@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="./style/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1cc1e75e40.js" crossorigin="anonymous"></script>
     <style>
         table, th, td {
             border: 1px solid rgb(0, 0, 0);
@@ -11,24 +14,26 @@
     <title>Tina's Blog</title>
 </head>
 <body>
-    <audio controls autoplay>
-        <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
-    </audio>
+    <nav class="sticky">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Hobbies & Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header>
         <figure>
-            <img src="./images/tinalogo.svg" height="100" alt="Tina's logo in yellow">
+            <img src="./images/tinalogo.svg" style= "display: block; margin: auto" height="100" alt="Tina's logo in yellow">
         </figure>
-        <nav>
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects"> Hobbies & Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class='audio-container'>
+            <audio controls autoplay>
+                <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </header>
     <main>
         <article>
-        <h1>Welcome to my page!</h1>
+        <h1><i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i>  Welcome to my page! <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i></h1>
             <section id="about">
                 <h2>About me</h2>
                     <p>Hi pals! My name is Tina I am Technical Specialist at Apple and I am currently studying UX Design at SAIT. I graduated with a Bachelor's of Science in Biomechanics during the pandemic however I was unable to find a position that I was passionate about. I landed a position at Apple during my soul search and  fell in love with the world of technology. Fast forward to the present I am doing a 180˚ career change at 25.</p>
