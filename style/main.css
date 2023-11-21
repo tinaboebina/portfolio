@@ -1,5 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
 body {
-    background-color: #ffffff
+    min-height: 100vh;
+    background: url(Wallpaper.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+nav{
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+a:hover{
+  background: grey;
+  transition: 0.5s;
+}
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  } 
+
+  .menu a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  .menu a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .menu a:hover::before {
+    width: 100%;
   }
 
 .audio-container {
@@ -8,40 +82,15 @@ body {
     align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #719c67;
-    position: sticky;
-    top: 0;
-    
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-nav li a:hover {
-    background-color: #b0eaff;
-}
-
 h1 {
   font-family: 'Bungee Shade', sans-serif;
     color: #ec5053;
+}
+
+div about {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
 }

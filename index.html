@@ -14,29 +14,31 @@
     <title>Tina's Blog</title>
 </head>
 <body>
-    <nav class="sticky">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Hobbies & Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <figure>
-            <img src="./images/tinalogo.svg" style= "display: block; margin: auto" height="100" alt="Tina's logo in yellow">
-        </figure>
+
+    <header class="header">
+        <nav>
+            <a href="#" class="logo"><img src="./images/tinalogo.svg" style= "display: block; margin: auto" height="50" alt="Tina's logo in yellow"></a>
+            <ul class="list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Hobbies & Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+        <h1><i class="fas fa-cloud" style="font-size:30px;color:rgb(0, 0, 0);"></i>  Welcome to my page! <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i></h1>
         <div class='audio-container'>
             <audio controls autoplay>
                 <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
             </audio>
         </div>
-    </header>
-    <main>
-        <article>
-        <h1><i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i>  Welcome to my page! <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i></h1>
+<!--ABOUT SECTION-->
             <section id="about">
                 <h2>About me</h2>
+                <div class="about">
                     <p>Hi pals! My name is Tina I am Technical Specialist at Apple and I am currently studying UX Design at SAIT. I graduated with a Bachelor's of Science in Biomechanics during the pandemic however I was unable to find a position that I was passionate about. I landed a position at Apple during my soul search and  fell in love with the world of technology. Fast forward to the present I am doing a 180˚ career change at 25.</p>
+                </div>
                         <figure>
                             <img src="./images/IMG_0029.JPG" height="300" alt="Picture of Briana, Tina, Chris and Ronald">
                             <figcaption>My school besties!! (from left to right: Briana, Me, Chris & Ronald)</figcaption>
@@ -45,6 +47,7 @@
                             <p> Fun Fact: this is our 2nd round of post secondary.</p>
                         </aside>
             </section>
+<!--PROJECTS SECTION-->
             <section id="projects">
                  <h2>Hobbies & Projects</h2>
                     <p> My hobbies include: </p>
@@ -70,6 +73,7 @@
                         <figcaption>Design 3: White flowers on a blue background, inflated.</figcaption>
                     </figure>
             </section>
+<!--CONTACT SECTION-->
             <section id="contact">
                     <h2>Contact</h2>
                     <table style="width: 300px">
@@ -85,6 +89,7 @@
             </section>
         </article>
     </main>
+<!--FOOTER-->
     <footer>
         <p>RIZ LA VIE, Łaszewo (2023). Little Planets - Remix [Recorded by RIZ LA VIE, Łaszewo]. Little Planets - Remix. Boom.Records. https://www.youtube.com/watch?v=D-8NEXZDs-o </p>
         &copy; Tina Le, 2023
