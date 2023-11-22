@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./style/main.css" rel="stylesheet" />
+    <link href="./style/main.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1cc1e75e40.js" crossorigin="anonymous"></script>
-    <style>
-        table, th, td {
-            border: 1px solid rgb(0, 0, 0);
-        }
-    </style>
     <title>Tina's Blog</title>
 </head>
-<body>
 
+<body>
+    <a href="#" class="logo"><img src="./images/tinalogo.svg" height="75" alt="Tina's logo in yellow"></a>
     <header class="header">
-        <nav>
-            <a href="#" class="logo"><img src="./images/tinalogo.svg" style= "display: block; margin: auto" height="50" alt="Tina's logo in yellow"></a>
-            <ul class="list">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Hobbies & Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav" id="topnav">
+            <nav>
+                <ul class="list">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Hobbies & Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <article>
-        <h1><i class="fas fa-cloud" style="font-size:30px;color:rgb(0, 0, 0);"></i>  Welcome to my page! <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i></h1>
-        <div class='audio-container'>
-            <audio controls autoplay>
-                <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+            <div class='audio-container'>
+                <audio controls autoplay>
+                    <source src="images/LittlePlanets_Remix.mp3" type="audio/mpeg">
+                </audio>
+            </div> 
+        <h1><i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i>  Welcome to my page! <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i></h1>
 <!--ABOUT SECTION-->
-            <section id="about">
+           <section id="about">
                 <h2>About me</h2>
-                <div class="about">
                     <p>Hi pals! My name is Tina I am Technical Specialist at Apple and I am currently studying UX Design at SAIT. I graduated with a Bachelor's of Science in Biomechanics during the pandemic however I was unable to find a position that I was passionate about. I landed a position at Apple during my soul search and  fell in love with the world of technology. Fast forward to the present I am doing a 180˚ career change at 25.</p>
-                </div>
                         <figure>
-                            <img src="./images/IMG_0029.JPG" height="300" alt="Picture of Briana, Tina, Chris and Ronald">
+                            <img src="./images/IMG_0029.JPG" height="300" alt="Picture of Briana, Tina, Chris and Ronald" class="center">
                             <figcaption>My school besties!! (from left to right: Briana, Me, Chris & Ronald)</figcaption>
                         </figure>
                         <aside>
@@ -51,28 +46,48 @@
             <section id="projects">
                  <h2>Hobbies & Projects</h2>
                     <p> My hobbies include: </p>
-                        <ul>
-                            <li>Bouldering</li>
-                            <li>Snowboarding</li>
-                            <li>Attending music festivals</li>
-                        </ul>
+                        <div class="hobbies-list">
+                            <ul>
+                                <li>Bouldering</li>
+                                <li>Snowboarding</li>
+                                <li>Attending music festivals</li>
+                            </ul>
+                        </div>
                     <p>Below are the designs I created for my portfolio. A collection of snowboards that pay tribute to summer vibes.</p>
                     <figure>
-                        <img src="./images/Strawberry_frogs-01.svg" height="300" alt="Tina's Illustrator design: frogs dressed as strawberries with a blue background">
-                        <img src="./images/SB_Strawberry_Frog.png" height="300" alt="Tina's snowboard design: frogs dressed as strawberries">
+                        <div class="gallery">
+                            <div class="column">
+                            <img src="./images/Strawberry_frogs-01.svg" height="300" alt="Tina's Illustrator design: frogs dressed as strawberries with a blue background">
+                            </div>
+                            <div class="column">
+                            <img src="./images/SB_Strawberry_Frog.png" height="300" alt="Tina's snowboard design: frogs dressed as strawberries">
+                            </div>
+                        </div>
                         <figcaption>Design 1: Frogs dressed as strawberries, inflated. </figcaption>
                     </figure>
                     <figure>
+                        <div class="gallery">
+                        <div class="column">
                         <img src="./images/Watermelon.svg" height="300" alt="Tina's Illustrator design: inflated watermelons">
+                        </div>
+                        <div class="column">
                         <img src="./images/SB_Watermelon.png" height="300" alt="Tina's snowboard design: inflated watermelons">
+                        </div>
+                        </div>                        
                         <figcaption>Design 2: Watermelon on a blue background, inflated.</figcaption>
                     </figure>
                     <figure>
+                        <div class="gallery">
+                        <div class="column">
                         <img src="./images/White_Flowers.svg" height="300" alt="Tina's Illustrator design: inflated white flowers">
+                        </div>
+                        <div class="column">
                         <img src="./images/SB_WhiteFlower.png" height="300" alt="Tina's snowboard design: inflated white flowers">
+                        </div>
+                        </div>                    
                         <figcaption>Design 3: White flowers on a blue background, inflated.</figcaption>
                     </figure>
-            </section>
+                </section>
 <!--CONTACT SECTION-->
             <section id="contact">
                     <h2>Contact</h2>
@@ -90,9 +105,11 @@
         </article>
     </main>
 <!--FOOTER-->
-    <footer>
-        <p>RIZ LA VIE, Łaszewo (2023). Little Planets - Remix [Recorded by RIZ LA VIE, Łaszewo]. Little Planets - Remix. Boom.Records. https://www.youtube.com/watch?v=D-8NEXZDs-o </p>
-        &copy; Tina Le, 2023
-    </footer>
+    <div class="footer">
+        <footer>
+            <p>RIZ LA VIE, Łaszewo (2023). Little Planets - Remix [Recorded by RIZ LA VIE, Łaszewo]. Little Planets - Remix. Boom.Records. https://www.youtube.com/watch?v=D-8NEXZDs-o </p>
+            &copy; Tina Le, 2023
+        </footer>
+    </div>
 </body>
 </html>
