@@ -7,23 +7,12 @@
   }
 
 body {
-<<<<<<< Updated upstream:style/main.css
-    min-height: 100vh;
-    background: url(Wallpaper.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-nav{
-  height: 80px;
-  width: 100%;
-=======
   min-height: 100vh;
   background: url("Wallpaper.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   margin: 15px 0 0;
   font-family: Arial, Helvetica, sans-serif;
->>>>>>> Stashed changes:scripts/main.css
 }
 
 nav ul{
@@ -103,8 +92,6 @@ div about {
   border: 5px solid gray;
   margin: 0;
 }
-<<<<<<< Updated upstream:style/main.css
-=======
 
 .center {
   display: block;
@@ -168,4 +155,3 @@ table, th, td {
 .odd {
   color: red;
 }
->>>>>>> Stashed changes:scripts/main.css
