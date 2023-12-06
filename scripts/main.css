@@ -1,157 +1,192 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-
+/* WALLPAPER + BODY FONT */
 body {
-  min-height: 100vh;
-  background: url("Wallpaper.jpeg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 15px 0 0;
+  background: url("Wallpaper.jpeg") no-repeat center/cover;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li{
-  color: white;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-
-a:hover{
-  background: grey;
-  transition: 0.5s;
-}
-
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-  } 
-
-  .menu a {
-    position: relative;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-  }
-
-  .menu a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: white;
-    transition: 0.3s;
-  }
-
-  .menu a:hover::before {
-    width: 100%;
-  }
-
-.audio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-  font-family: 'Bungee Shade', sans-serif;
-    color: #ec5053;
-}
-
-div about {
-  width: 320px;
+/* LOGO */
+header .logo img{
   height: 50px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 60%;
-  padding: 10px;
-  margin-top: 10px;
+/* NAVIGATION BAR */
+header {
+  background-color: rgb(245, 240, 255);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-.hobbies-list ul {
-  padding-left: 20px;
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
 }
 
-.gallery {
-  display: flex;
-  justify-content: space-between;
+header nav ul li {
+  margin: 0 10px;
 }
 
-.column {
-  flex: 1 1 0;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+header nav ul li a {
+    display: inline-block;
+    color: #ffb603;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
 }
 
-.column img {
-  width: 80%;
-  height: auto;
-  max-width: 100%;
+/* NAVIGATION BAR HOVER COLOUR CHANGE */
+header nav ul li a:hover {
+  color: #ffb603;
+  background-color: #ffffff;
+  background-size: 100%;
 }
 
-#contact {
-  margin-bottom: 20px;
+
+/* media query breakpoints for smaller screens */
+/* hamburger menu */
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
 }
 
-table, th, td {
-  border: 1px solid rgb(0, 0, 0);
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -120%;
+        top: 70px;
+        width: 100%;
+        background: #ffffff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        margin: 10px 0;
+    }
+    header nav ul li a {
+      margin: 10px 0;
+    }
 }
 
-.container {
-  background: #d5dae1;
-  min-height: 5vh;
-  min-width: 100vw;
-  display: grid;
-  place-items: center;
-}
 
-.text {
-  padding: 1rem 2.5rem;
-  border-radius: 50px;
-  font-size: 1rem;
-  color: #292b2e;
-}
-
+/* INCREMENTING BUTTON */
 .even {
   color: green;
 }
 
 .odd {
   color: red;
+}
+
+/* Welcome Header Message */
+h1 {
+  margin-top: 10px;
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: xx-large;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+#about {
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+}
+
+.center {
+  display: block;
+  width: 60%;
+  height: 60%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+}
+
+      /* INDENTATION FOR BULLET POINT LIST */
+        .hobbies-list ul {
+        padding-left: 20px;
+      }
+
+      /* RESPONSIVE IMAGE LAYOUT */
+        .gallery {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .column img {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+
+/* CONTACT SECTION */
+#contact {
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+}
+
+      /* TABLE BORDER */
+      table, th, td {
+        border: 1px solid rgb(0, 0, 0);
+      }
+
+/* ORDERED LIST FOR FOR JS LOOP */
+#numbers {
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+  column-count: 4;
+  column-gap: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(245, 240, 255);
+  display: grid;
+  place-items: center;
+}
+
+.footertext {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #000000;
 }
